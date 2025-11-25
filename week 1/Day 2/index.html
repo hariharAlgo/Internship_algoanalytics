@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 - CSS Skills & Layouts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div class="container header-content">
+            <div class="logo">Day 2 Task</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#positioning">Positioning</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle Theme">
+                <span class="icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Day 2 Task</h1>
+                <p>Exploring Positioning, Grids, and Responsive Design.</p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </section>
+
+        <section id="positioning" class="container section">
+            <h2>Positioning Demo</h2>
+            <div class="card-container">
+                <div class="card">
+                    <span class="badge">New!</span>
+                    <h3>Product Card</h3>
+                    <p>This is a sample product card with a badge positioned absolutely in the top-right corner.</p>
+                    <button class="btn btn-secondary">View Details</button>
+                </div>
+                <div class="card">
+                    <span class="badge sale">Sale</span>
+                    <h3>Discount Item</h3>
+                    <p>Another card to show consistent positioning behavior across multiple elements.</p>
+                    <button class="btn btn-secondary">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="container section">
+            <h2>Image Grid Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://picsum.photos/id/101/400/300" alt="Gallery Image 1"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/102/400/300" alt="Gallery Image 2"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/103/400/300" alt="Gallery Image 3"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/104/400/300" alt="Gallery Image 4"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/106/400/300" alt="Gallery Image 5"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/108/400/300" alt="Gallery Image 6"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Day 2 Task. By Harihar Bajpai.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
