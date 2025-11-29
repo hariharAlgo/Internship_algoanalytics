@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone - Tailwind CSS</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Card Container -->
+    <div class="bg-white border border-gray-200 rounded-lg shadow-sm max-w-md w-full overflow-hidden">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between p-3">
+            <div class="flex items-center space-x-3">
+                <div class="relative">
+                    <img src="./assets/profile.png" alt="Profile"
+                        class="w-8 h-8 rounded-full object-cover border border-gray-200 cursor-pointer">
+                    <!-- Story Ring (Optional visual touch) -->
+                    <div
+                        class="absolute -inset-0.5 rounded-full border-2 border-pink-500 opacity-0 hover:opacity-100 transition-opacity pointer-events-none">
+                    </div>
+                </div>
+                <span class="text-sm font-semibold text-gray-900 cursor-pointer hover:underline">photo_journey</span>
+            </div>
+            <button class="text-gray-900 hover:text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Image -->
+        <div class="w-full bg-gray-100">
+            <img src="./assets/post.png" alt="Post Image" class="w-full h-auto object-cover max-h-[500px]">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="p-3">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-900 hover:text-gray-600 transition-colors focus:outline-none group">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-7 h-7 group-hover:scale-110 transition-transform">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                        </svg>
+                    </button>
+                    <button class="text-gray-900 hover:text-gray-600 transition-colors focus:outline-none group">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-7 h-7 group-hover:scale-110 transition-transform">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 20.25c4.97 0 9-3.698 9-8.25s-4.03-8.25-9-8.25S3 7.402 3 11.95c0 4.552 4.03 8.25 9 8.25z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 11.25c0 .621-.504 1.125-1.125 1.125H9.75a1.125 1.125 0 01-1.125-1.125V8.625c0-.621.504-1.125 1.125-1.125h4.875c.621 0 1.125.504 1.125 1.125v2.625z" />
+                        </svg>
+                    </button>
+                    <button class="text-gray-900 hover:text-gray-600 transition-colors focus:outline-none group">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-7 h-7 group-hover:scale-110 transition-transform">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="text-gray-900 hover:text-gray-600 transition-colors focus:outline-none group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7 group-hover:scale-110 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Likes -->
+            <div class="mb-2">
+                <span class="text-sm font-semibold text-gray-900">1,234 likes</span>
+            </div>
+
+            <!-- Caption -->
+            <div class="mb-2">
+                <span class="text-sm font-semibold text-gray-900 mr-1">photo_journey</span>
+                <span class="text-sm text-gray-900">Chasing sunsets and mountain views. 🏔️✨ <span
+                        class="text-blue-900 cursor-pointer">#nature</span> <span
+                        class="text-blue-900 cursor-pointer">#photography</span></span>
+            </div>
+
+            <!-- Comments Link -->
+            <div class="mb-2">
+                <button class="text-sm text-gray-500 cursor-pointer focus:outline-none">View all 42 comments</button>
+            </div>
+
+            <!-- Timestamp -->
+            <div class="mb-3">
+                <span class="text-xs text-gray-400 uppercase tracking-wide">2 hours ago</span>
+            </div>
+
+            <!-- Add Comment -->
+            <div class="border-t border-gray-100 pt-3 flex items-center">
+                <button class="focus:outline-none mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-600">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                    </svg>
+                </button>
+                <input type="text" placeholder="Add a comment..."
+                    class="flex-grow text-sm text-gray-900 placeholder-gray-400 focus:outline-none">
+                <button
+                    class="text-sm font-semibold text-blue-500 hover:text-blue-700 focus:outline-none ml-2">Post</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
