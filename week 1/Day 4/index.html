@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4: JS Arrays & DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Day 4: JS Arrays & DOM Manipulation</h1>
+
+        <!-- Section 1: Array Methods (Console Output) -->
+        <section class="card">
+            <h2>1. Custom Map & Reduce</h2>
+            <p>Open the <strong>Console</strong> (F12) to see the output of <code>myMap</code> and
+                <code>myReduce</code>.</p>
+            <div id="console-output" class="output-box">
+                <!-- JS will populate this for visibility -->
+            </div>
+        </section>
+
+        <!-- Section 2: Tab Switcher -->
+        <section class="card">
+            <h2>2. Tab Switcher</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                <button class="tab-btn" data-tab="tab3">Tab 3</button>
+            </div>
+            <div class="tab-content">
+                <div id="tab1" class="content active">
+                    <h3>Content for Tab 1</h3>
+                    <p>This is the content displayed when Tab 1 is active.</p>
+                </div>
+                <div id="tab2" class="content">
+                    <h3>Content for Tab 2</h3>
+                    <p>Here is some different information for Tab 2.</p>
+                </div>
+                <div id="tab3" class="content">
+                    <h3>Content for Tab 3</h3>
+                    <p>Finally, this is the content for Tab 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Counter App -->
+        <section class="card">
+            <h2>3. Counter App</h2>
+            <div class="counter-wrapper">
+                <button id="decrease-btn" class="btn danger">-</button>
+                <span id="counter-value">0</span>
+                <button id="increase-btn" class="btn success">+</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
