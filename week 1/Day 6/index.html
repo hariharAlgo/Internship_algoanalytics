@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6: Event Handling & Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Day 6: Event Handling & Forms</h1>
+
+        <!-- 1. Todo List with LocalStorage -->
+        <section class="card">
+            <h2>1. Todo List (Persistent)</h2>
+            <div class="todo-input-group">
+                <input type="text" id="todo-input" placeholder="Add a new task...">
+                <button id="add-btn" class="btn primary">Add</button>
+            </div>
+            <ul id="todo-list">
+                <!-- Tasks will be added here -->
+            </ul>
+        </section>
+
+        <!-- 2. Debounce Search -->
+        <section class="card">
+            <h2>2. Debounce Search</h2>
+            <div class="form-group">
+                <label for="search-input">Search (simulated API call):</label>
+                <input type="text" id="search-input" placeholder="Type something...">
+                <p id="search-status" class="status-text">Ready to search...</p>
+                <div id="search-results"></div>
+            </div>
+        </section>
+
+        <!-- 3. Form Validation -->
+        <section class="card">
+            <h2>3. Registration Form</h2>
+            <form id="registration-form" novalidate>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="example@domain.com">
+                    <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <div class="strength-meter">
+                        <div id="strength-bar"></div>
+                    </div>
+                    <span class="strength-text" id="strength-text"></span>
+                    <span class="error-msg" id="password-error"></span>
+                </div>
+
+                <button type="submit" class="btn success">Register</button>
+                <p id="form-success" class="success-msg"></p>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
