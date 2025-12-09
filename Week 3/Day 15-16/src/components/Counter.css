@@ -1,0 +1,147 @@
+.counter-container {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.counter-container h2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.counter-display {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.count-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.counter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.6rem 1rem;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.counter-custom {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.amount-input {
+    width: 70px;
+    padding: 0.6rem;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+    background: #fff;
+    color: #000;
+}
+
+.amount-input:focus {
+    outline: none;
+    background: #f5f5f5;
+}
+
+@media (min-width: 900px) {
+    .counter-container {
+        padding: 2rem;
+    }
+
+    .counter-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .counter-display {
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .count-value {
+        font-size: 3rem;
+    }
+
+    .counter-buttons {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    .counter-custom {
+        gap: 1rem;
+    }
+
+    .amount-input {
+        width: 80px;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .counter-container {
+        padding: 1rem;
+    }
+
+    .counter-container h2 {
+        font-size: 1.1rem;
+    }
+
+    .counter-display {
+        padding: 1rem;
+    }
+
+    .count-value {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .amount-input {
+        width: 60px;
+        padding: 0.5rem;
+    }
+}
